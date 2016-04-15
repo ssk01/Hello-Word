@@ -1,3 +1,6 @@
+//bst by ssk, a little copy from lyp
+
+
 #pragma once
 #include <new>
 #include <vector>
