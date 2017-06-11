@@ -15,7 +15,6 @@ void* philosopher(void * i)
     int k = 30;
     while(k)
     {
-        // pid_t tid = gettid();]
         sleep(0.15);
         int id =*((int *)i);
         printf("i am philosopher %d and I am thinkING\n",id);
@@ -60,20 +59,3 @@ int main()
     printf("we eat happily!!");
 }
 
-// Program diningphilosophers;
-// Var  fork:array [0..4] of semaphore (:= 1);
-//       room : semaphore (:= 4);
-// i : integer;
-// procedure philosopher (i : integer);
-// {
-// While(1)
-// {
-// think; 
-//   wait(room); /*第5位哲学家将被room信号量阻塞*/
-//        wait(fork[i]);
-//        wait(fork[(i + 1) mod 5]);
-//        eat; 
-//        signal(fork[(i + 1) mod 5]);
-//        signal(fork[i]);    
-//   signal(room);/*唤醒被阻塞的第5位哲学家*/
-// }
